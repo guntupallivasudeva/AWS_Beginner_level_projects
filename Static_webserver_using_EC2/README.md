@@ -11,7 +11,6 @@ This project demonstrates how to host a web server on AWS using the following AW
 
 ## 📊 Architecture Diagram
 
-![AWS Web Server Architecture](./A_2D_digital_diagram_illustrates_a_web_server_host.png)
 ![Screenshot 2025-05-10 170136](https://github.com/user-attachments/assets/44a6b296-3199-4202-8c22-47b0c1108500)
 
 ---
