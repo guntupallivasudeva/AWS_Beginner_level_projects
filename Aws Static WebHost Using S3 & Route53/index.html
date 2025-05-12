@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Static Website</title>
+  <style>
+    body {
+      color: #000000;
+      background-color: #fbfbfb;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    
+    h1 {
+      font-size: 500%;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    
+    h2 {
+      font-size: 200%;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  </style>
+  </head>
+  <body>
+  <div>
+    <h1> AWS S3 Static Project!! </h1>
+    <h2> This How to deploy Static Website on AWS S3</h2>
+    <p><h3>Hosting a Static Website on AWS S3</h3></p>
+
+      Welcome to the quick guide on how to host a static website on AWS S3 (Simple Storage Service).
+      
+      <h3>Introduction</h3>
+      
+      If you need to host a static website inexpensively, AWS S3 offers an easy, fast, and cost-effective solution. With AWS S3, you only pay for the storage you use, and you can even get up to 5GB of storage free of charge for a year within the AWS Free Tier.
+      
+      <h3>Step-by-Step Guide</h3>
+      
+      <h3>Follow these steps to host your static website on AWS S3:</h3>
+      
+      <h4>Access AWS Console</h4>
+         
+      Go to your AWS console and search for "S3" in the search bar, then select "S3" when it appears.
+      
+      <h4>1. Create a Domain</h4>
+
+      -> Create/Purchase a domain name using Amazon Route 53 Open AWS Console and Navigate to Amazon Route 53 dashboard.<br>
+      -> Click on Register Domain<br>
+      -> Search if your Domain is available and add it to your cart<br>
+      -> Enter your details and accept the terms and conditions<br>
+      -> Don't forget to disable automatic renewal<br>
+
+      <h4>2. Create a Bucket</h4>
+      
+      -> Click on "Create bucket."<br>
+      -> Provide a unique "Bucket name" for your website.
+      
+      <h4>3. Configure Bucket Settings</h4>
+      
+      -> Unselect "Block all public access" to allow internet users to access your website.<br>
+      -> Click on "Create bucket" at the bottom.
+      
+      <h4>4. Select Your Bucket</h4>
+      
+      Once created, select your bucket from the list.
+      
+      <h4>5. Configure Static Web Hosting</h4>
+      
+      -> Under the "Properties" tab, scroll down to "Static web hosting" and click on "Edit."<br>
+      -> Click on "Enable" and select "Host a static website." Choose the default home page (index document) for your site.
+      
+      <h4>6. Set Up Error Handling (Optional)</h4>
+      
+      -> Enter the names of the index document and error document (if needed), then click "Save changes."
+      
+      <h4>7. Endpoint Creation</h4>
+      
+      When "Static website hosting" is enabled, the bucket endpoint is created.
+      
+      <h4>8. Bucket Policy for File Access</h4>
+      
+      -> Create a bucket policy to enable access to the files.<br>
+      -> Navigate to the "Permissions" tab and under the "Bucket policy" section, enter the provided policy, ensuring to change the Resource to your bucket's ARN followed by "/*".
+      
+      <h4>9. Upload Your Website</h4>
+      
+      Create and upload your website files, including the "index.html" file as specified in step 8.
+      
+      <h4>10.Final Configuration</h4>
+      
+      -> Navigate to the "Properties" tab and load the bucket's endpoint. The "index.html" file will serve as the home page.<br>
+      -> In case of an error (e.g., the index file is not available), the "error.html" page will be returned at the endpoint.
+      
+      <h4>Sample Website Pages</h4>
+      
+      The article includes sample website pages for your reference:<br>
+      
+      -> index.html: A basic static web page with AWS S3-themed content.<br>
+      -> error.html: A custom error page (404) for handling missing files.
+      
+      <h4>Conclusion</h4>
+      
+      With these steps, you can easily host your static website on AWS S3, benefiting from its simplicity, speed, and cost-effectiveness. Have fun hosting your website!<br>
+      
+      <h4>Work Flow Diagram :</h4>
+      <img src="Static Web 2.png" alt="Workflow Diagram" style="object-fit: contain"> <br><br><br>
+      <img src="Static Web Host.png" alt="Workflow Diagram" style="object-fit: contain">  
+      
+      <h4><b>Author: </b></h4>
+      <a href="https://www.linkedin.com/in/gvasudeva">Guntupalli VasuDeva</a>
+   </p>
+
+  </div>
+</body>
+</html>
