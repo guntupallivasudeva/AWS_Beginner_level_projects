@@ -109,7 +109,7 @@ insert image here:
 
 ```
 - Click Next → Add a name: MyOrgDevEnvPolicy
-- Click Create policy
+- Click Create policy  
 ✅ Policy is now ready to attach.
 
 #### 📄 MyOrgProdEnvPolicy
@@ -150,8 +150,8 @@ insert image here:
 }
 
 ```
-- Click Next → Add a name: MyOrgProdEnvPolicy
-- Click Create policy
+- Click Next → Add a name: MyOrgProdEnvPolicy  
+- Click Create policy  
 ✅ Policy is now ready to attach.
 ---
 
