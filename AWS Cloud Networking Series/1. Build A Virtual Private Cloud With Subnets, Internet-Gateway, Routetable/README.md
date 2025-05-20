@@ -118,7 +118,7 @@ AWS Cloud Account:
 
 ## Architecture Diagram  
 
-![Project Architecture]("Project Architecture.png")
+![Project Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/1.%20Build%20A%20Virtual%20Private%20Cloud%20With%20Subnets,%20Internet-Gateway,%20Routetable/Images/Project%20Architeture.png?raw=true)
   
 ---
 
