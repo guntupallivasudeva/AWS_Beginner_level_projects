@@ -5,4 +5,4 @@
 ### 3. Visualize Data Using Aws Quick-Sight  
 ### 4. AWS Cloud Security Using EC2,IAM Polices, IAM Users Groups, IAM Users  
 ### 5. AWS Cloud Networking Project Series  
-  ## 1. Buil a Vitural Private Cloud
+   #### 1. Build a Vitural Private Cloud
