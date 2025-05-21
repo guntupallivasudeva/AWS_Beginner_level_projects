@@ -30,7 +30,7 @@ This guide provides a step-by-step process for creating a Virtual Private Cloud 
 
 ### Project Architecture Diagram
 
-![Project Architecture]()
+![Project Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/2.%20VPC%20Traffic%20Flow%20and%20Security/Project%20Architeture.png?raw=true)
 
 
 ### 1. Create the VPC
