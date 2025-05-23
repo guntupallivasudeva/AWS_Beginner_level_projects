@@ -143,7 +143,7 @@ AWS Cloud Account:
 
 ### Project Architecture Diagram
 
-![Project Architecture]()
+![Project Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/4.%20Provisioning%20Public%20&%20Private%20Server%20(%20EC2%20)%20to%20our%20Network/Project%20Architecture.png?raw=true)
 
 ---
 
