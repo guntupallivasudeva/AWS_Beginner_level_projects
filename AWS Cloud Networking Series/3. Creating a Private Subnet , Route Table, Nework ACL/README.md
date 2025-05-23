@@ -41,10 +41,11 @@ This guide provides a step-by-step process for creating a Public and Private Sub
 
 ### Project Architecture Diagram
 
-![Project Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/3.%20Creating%20a%20Private%20Subnet%20,%20Route%20Table,%20Nework%20ACL/Project%20Architeture.png?raw=true)
-
 ---
 
+![Project Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/3.%20Creating%20a%20Private%20Subnet%20,%20Route%20Table,%20Nework%20ACL/Project%20Architecture.png?raw=true)
+
+---
 
 ### 1. Create the VPC
 
