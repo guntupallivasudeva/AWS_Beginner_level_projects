@@ -15,7 +15,7 @@
 - Select Connect.  
 - Keep all of the default settings.  
 
-![Use Ec2 Instance Connect]()  
+![Use Ec2 Instance Connect](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/5.%20Testing%20VPC%20Connectivity%20-%20Verify%20network%20communication%20works%20/Images/1.%20EC2%20Instance%20Connet.png?raw=true)  
 
 - Select Connect. 
 - We've failed to connect to our instance !.  
@@ -37,11 +37,9 @@
 - Select your Public Server and select Connect again.  
 - Success.  
 
-![Connect]()  
+![Inbound for Public SG](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/5.%20Testing%20VPC%20Connectivity%20-%20Verify%20network%20communication%20works%20/Images/2.%20Allow%20inbound%20trafic%20for%20public%20Security%20group%20from%20SSH.png?raw=true)  
 
 ---
-
-### 24. Test Connectivity Between EC2 Instances :  
 
 - Connection between Public and Private Instances.    
 - Leave open the EC2 Instance Connect tab, but head back to your EC2 console in a new tab.  
@@ -49,9 +47,13 @@
 - Copy your private server's Private IPv4 address.  
 - Switch back to the EC2 Instance Connect tab.  
 - Run ping `[the Private IPv4 address you just copied]` in terminal.  
-- Your final result should look similar to something like `ping 10.0.1.223`.    
+- Your final result should look similar to something like `ping 10.0.1.223`.
 
-![result]()  
+---
+
+![Connected to Public Insatnce](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/5.%20Testing%20VPC%20Connectivity%20-%20Verify%20network%20communication%20works%20/Images/3.%20Connected%20to%20Public%20Instance.png?raw=true)
+
+### 24. Test Connectivity Between EC2 Instances :  
 
 - To resolve this connectivity error, let's check whether `MyOrg Private Server` is allowing in ICMP traffic.  
 - Leave open the EC2 Instance Connect tab, but head back to your VPC console in a new tab.  
@@ -68,12 +70,15 @@
 - Set the Source to traffic coming from your public subnet `10.0.0.0/24`  
 - Select Save changes.  
 
-![ICMP inbound]()
+![Edit Inbound add ICMP to NACL](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/5.%20Testing%20VPC%20Connectivity%20-%20Verify%20network%20communication%20works%20/Images/4.%20Edit%20inbound%20rule%20add%20ICMP%20traffic%20in%20Private%20NACL.png?raw=true) 
 
 - Let's apply the same to Outbound rules.  
   - Rule number: `100`  
   - Type: `All ICMP - IPv4`.  
-  - Source: `10.0.0.0/24`.  
+  - Source: `10.0.0.0/24`.
+
+![Edit Outbound add ICMP to NACL](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/5.%20Testing%20VPC%20Connectivity%20-%20Verify%20network%20communication%20works%20/Images/5.%20Edit%20outbound%20rule%20add%20ICMP%20traffic%20in%20Private%20NACL.png?raw=true)  
+
 - check the security groups! Select Security groups from the left hand navigation panel.  
 - Select `MyOrg Private Security Group`.  
 - Check your Inbound rules tab - does this security group allow ICMP traffic.  
@@ -83,11 +88,12 @@
 - For Source, select `MyOrg Public Security Group`.  
 - Select Save rules.  
 
-![]()
+![Edit Inbound Add ICMP to Private SG](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/5.%20Testing%20VPC%20Connectivity%20-%20Verify%20network%20communication%20works%20/Images/6.%20Edit%20inbound%20rule%20add%20ICMP%20traffic%20in%20Private%20SG.png.png?raw=true)  
+
 
 - Revisit the EC2 Instance Connect tab that's connected to `MyOrg Public Server`.  
 
-![]()
+![Connectivity Between EC2 Instances](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/5.%20Testing%20VPC%20Connectivity%20-%20Verify%20network%20communication%20works%20/Images/7.%20Connectivity%20Between%20EC2%20Insatnces.png?raw=true)
 
 ---
 
