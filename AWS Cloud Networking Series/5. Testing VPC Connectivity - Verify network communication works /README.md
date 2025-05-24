@@ -104,7 +104,7 @@
 - Type in curl example.com in the prompt, i.e. right after the $ sign at the bottom line of the black window.  
 - You should see a response similar to this!  
 
-![]()
+![Internet Connectivity](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/5.%20Testing%20VPC%20Connectivity%20-%20Verify%20network%20communication%20works%20/Images/8.%20Final%20Connectivity.png?raw=true)
 
 **Thats It we Done with Connectivity Check**  
 
