@@ -156,6 +156,7 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - **Auto-assign Public IP**: `Disable`
     - **Security group**: `Default security group`
 4. Click on **Launch instance**.
+
 ![Instance name](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/19.%20Insatnce%20name.png?raw=true)
 ![Instance Network](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/19.1.%20%20Instance%201.png?raw=true)
 ![summary](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/19.1.%20%20Instance%201.png?raw=true)
@@ -170,6 +171,7 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - **Auto-assign Public IP**: `Disable`
     - **Security group**: `Default security group`
 7. Click on **Launch instance**.
+   
 ![Instance summary](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/21.%20Instance%202%20.png?raw=true)
 ![Instance network](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/22.%20instance%202.png?raw=true)
 ![Instances Created](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/23.%20Both%20Created%20Instances.png?raw=true)
