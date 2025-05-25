@@ -43,7 +43,7 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
 
 ## Project Architecture Diagram
 
-![VPC Peering Architecture]()
+![VPC Peering Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Project%20Architecture.png?raw=true)
 
 ---
 
@@ -65,10 +65,10 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - **DNS options**: `Checked`.
 5. Create VPC.
 
-![VPC 1]()
-![VPC 1]()
-![VPC-1]()
-![Resource Map]()
+![VPC 1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/1.%20VPC-1.png?raw=true)
+![VPC 1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/2.%20VPC-1.png?raw=true)
+![VPC-1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/3.%20VPC-1.png?raw=true)
+![Resource Map](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/4.%20VPC-1%20Resource%20Map.png?raw=true)
 
 6. Repeat the above steps to create a second VPC:
     - **VPC Name**: `MyOrg VPC-2`
@@ -83,10 +83,10 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - **DNS options**: `Checked`.
 5. Create VPC.
 
-![VPC 1]()
-![VPC 1]()
-![VPC-1]()
-![Resource Map]()
+![VPC 1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/5.%20VPC-2.png?raw=true)
+![VPC 1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/6.%20VPC-2.png?raw=true)
+![VPC-1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/7.%20VPC-2.png?raw=true)
+![Resource Map](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/8.%20VPC-2%20Resource%20Map%20.png?raw=true)
 
 ---
 
@@ -102,8 +102,8 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - **VPC ID (Accepter)**: Select `MyOrg VPC-2`
 4. Click on **Create Peering Connection**.
 
-![VPC Peering Connection]()
-![VPC Peering Connection]()
+![VPC Peering Connection](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/9.%20Create%20Peering.png?raw=true)
+![VPC Peering Connection](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/10.%20Create%20Peering.png?raw=true)
 
 5. After creation, The green success bar says the peering connection has been requested.
     - Select the peering connection and click on **Actions** > **Accept Request**.
@@ -111,14 +111,14 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - The status will change to **Active**.
     - **Modify my route tables now**
 
-![Accept VPC Peering Connection]()
-![Accepting action]()
-![Accept Request]()
+![Accept VPC Peering Connection](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/11.%20VPC%20Peering%20Created%20&%20requested.png?raw=true)
+![Accepting action](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/12.%20.png?raw=true)
+![Accept Request](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/13.%20Accepting%20the%20request.png?raw=true)
 
 ---
 ## ✍️ 28. Update Route Tables
 
-![Modify Route Tables]()
+![Modify Route Tables](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/14.%20Modify%20the%20Routetable.png?raw=true)
 
 1. In the **VPC Dashboard**, click on **Route Tables** in the left-hand menu.
 2. Select the route table associated with `MyOrg-1-rtb-public`.
@@ -130,16 +130,16 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - **Target**: `VPC <> VPC 2`
 7. Click on **Save routes**.`
 
-![Adding Route]()
-![Route Table Updated]()
+![Adding Route](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/15.%20Adding%20New%20Route%20ofr%20VPC1.png?raw=true)
+![Route Table Updated](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/16.%20new%20Route%20added%20vpc1.png?raw=true)
 
 8. Repeat the above steps for the route table associated with `MyOrg-2-rtb-public`:
     - **Destination**: `10.1.0.0/16`
     - **Target**: `VPC <> VPC 1`
 9. Click on **Save routes**.
 
-![Adding Route]()
-![Route Table Updated]()
+![Adding Route](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/17.%20Adding%20New%20Route%20To%20VPC%202.png?raw=true)
+![Route Table Updated](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/18.%20new%20route%20added%20to%20vpc%202.png?raw=true)
 
 ---
 ## 🚀 29. Launch EC2 Instances
@@ -156,10 +156,11 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - **Auto-assign Public IP**: `Disable`
     - **Security group**: `Default security group`
 4. Click on **Launch instance**.
-![Launch Instance]()
-![]()
-![]()
-5. Repeat the above steps to launch another instance in `MyOrg VPC-2`:
+![Instance name](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/19.%20Insatnce%20name.png?raw=true)
+![Instance Network](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/19.1.%20%20Instance%201.png?raw=true)
+![summary](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/19.1.%20%20Instance%201.png?raw=true)
+
+6. Repeat the above steps to launch another instance in `MyOrg VPC-2`:
     - **Name**: `Instance MyOrg VPC-2`
     - **AMI**: `Amazon Linux 2023 AMI`
     - **Instance type**: `t3.micro` Free tier eligible
@@ -168,10 +169,10 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
     - **Subnet**: `MyOrg VPC-2 Public Subnet`
     - **Auto-assign Public IP**: `Disable`
     - **Security group**: `Default security group`
-6. Click on **Launch instance**.
-![Launch Instance]()
-![Launch Instance]()
-![Launch Instance]()
+7. Click on **Launch instance**.
+![Instance summary](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/21.%20Instance%202%20.png?raw=true)
+![Instance network](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/22.%20instance%202.png?raw=true)
+![Instances Created](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/23.%20Both%20Created%20Instances.png?raw=true)
 
 ---
 ## 🔌 30. Connect to Instance 1
@@ -187,7 +188,7 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
 9. selecct allocated Elastic IP and click on **Actions** > **Associate Elastic IP address**.
 10. Select `Instance MyOrg VPC-1` and click on **Associate**.
 
-![Associate Elastic IP]()
+![Associate Elastic IP](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/24.%20Elastic%20ip.png?raw=true)
 
 11. Now, go back to the **EC2 Dashboard** and select `Instance MyOrg VPC-1`.
 12. Click on **Connect**.
@@ -209,8 +210,8 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
 24. Click on **Connect**.
 25. Success! You are now connected to `Instance MyOrg VPC-1`.
 
-![Connect to Instance MyOrg VPC-1]()
-![Connect to Instance MyOrg VPC-1]()
+![Connect to Instance MyOrg VPC-1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/25.%20Adding%20inbound%20rules%20to%20Sg.png?raw=true)
+![Connect to Instance MyOrg VPC-1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/26.%20edit%20inbound%20of%20sg%20of%20insatance%201.png?raw=true)
 
 ---
 
@@ -220,7 +221,7 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
 2. Select the instance `Instance MyOrg VPC-2`.
 3. Copy Private IPv4 address of `Instance MyOrg VPC-2`.
 
-![Copy Private IPv4 address]()
+![Copy Private IPv4 address](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/27.%20Test%20Peer%20Connectivity%20Using%20VPC2%20Private%20address.png?raw=true)
 
 4. Switch back to the terminal of `Instance MyOrg VPC-1`.
 5. Run the command `ping [Private IPv4 address of Instance MyOrg VPC-2]`.
@@ -243,7 +244,7 @@ This guide provides a step-by-step process for creating a VPC Peering Connection
 17. Now go back to the terminal of `Instance MyOrg VPC-1`.
 18. You should see a response indicating successful connectivity between the two VPCs.
 
-![Final VPC Peering Connection]()
+![Final VPC Peering Connection](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/6.%20VPC%20Peering%20Connection/Images/28.%20Final%20Connectivity.png?raw=true)
 
 ---
 
