@@ -114,34 +114,34 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
 
 #### 34. Create IAM Role for Flow Logs :
 
-    - Go to the IAM Dashboard in New tab(prefer).
-    - Click on "Policies" in the left sidebar.
-    - Click on "Create policy".
-    - Chose the "JSON" tab.
-    - Delete the default content and paste the following policy:  
+  - Go to the IAM Dashboard in New tab(prefer).
+  - Click on "Policies" in the left sidebar.
+  - Click on "Create policy".
+  - Chose the "JSON" tab.
+  - Delete the default content and paste the following policy:  
 
 ```json
     {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "logs:CreateLogGroup",
-        "logs:CreateLogStream",
-        "logs:PutLogEvents",
-        "logs:DescribeLogGroups",
-        "logs:DescribeLogStreams"
-      ],
-      "Resource": "*"
-    }
-  ]
-}
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents",
+          "logs:DescribeLogGroups",
+          "logs:DescribeLogStreams"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }
 ```
 
-    - Choose Next
-    - Name the policy as `MyOrgVPCFlowLogsPolicy`.
-    - Click "Create policy".
+  - Choose Next
+  - Name the policy as `MyOrgVPCFlowLogsPolicy`.
+  - Click "Create policy".
 
 ![Policy](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/7.%20IAM%20flow%20log%20policy.png?raw=true)  
 
