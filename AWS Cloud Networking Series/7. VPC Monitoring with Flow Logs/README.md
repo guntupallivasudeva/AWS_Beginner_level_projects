@@ -145,21 +145,22 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
 
 ![Policy](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/7.%20IAM%20flow%20log%20policy.png?raw=true)  
 
-    - Now Choose **Roles** on left hand navigation pane.
-    - Click on "Create role".
-    - Select "Custom Trust policy" as the trusted entity type.
-    - replacle "principal" with the following:
+  - Now Choose **Roles** on left hand navigation pane.
+  - Click on "Create role".
+  - Select "Custom Trust policy" as the trusted entity type.
+  - replacle "principal" with the following:
 
 ```json
   {
     "Service": "vpc-flow-logs.amazonaws.com"
   }
-  ```
-- Choose Next.
-    - On add permissions page, search for the policy `MyOrgVPCFlowLogsPolicy` and select it.
-    - Click Next.
-    - Name the role as `MyOrgVPCFlowLogsRole`.
-    - Click "Create role".
+```
+
+  - Choose Next.
+  - On add permissions page, search for the policy `MyOrgVPCFlowLogsPolicy` and select it.
+  - Click Next.
+  - Name the role as `MyOrgVPCFlowLogsRole`.
+  - Click "Create role".
 
 ![Role](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/8.%20IAM%20role%20for%20Flow%20log.png?raw=true)  
 
@@ -175,9 +176,9 @@ Now go back to the VPC Dashboard.
 
 ### 33. Continuation of Set up Flow Logs:
 
-    - Select the IAM role `MyOrgVPCFlowLogsRole`.
-    - Click "Create flow log".
-    - Now FFlow Log is all setup.  
+  - Select the IAM role `MyOrgVPCFlowLogsRole`.
+  - Click "Create flow log".
+  - Now FFlow Log is all setup.  
     
 ![](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/6.1,12.%20Create%20a%20flow%20log.png?raw=true)  
 
@@ -188,30 +189,30 @@ Now go back to the VPC Dashboard.
 ### 34. Test VPC Peering Connection
 
 1. **Check VPC Peering Connection Status**:
-   - Go to the VPC Dashboard.
-   - Click on "Peering Connections" in the left sidebar.
-   - Select the peering connection `VPC 1 <> VPC 2`.
-   - Ensure the status is `Active`.
+  - Go to the VPC Dashboard.
+  - Click on "Peering Connections" in the left sidebar.
+  - Select the peering connection `VPC 1 <> VPC 2`.
+  - Ensure the status is `Active`.
 2. **Test Connectivity**:
-    - Go to the EC2 Dashboard.
-    - Select the instance `Instance - MyOrg VPC 1`.
-    - Click on "Connect" and choose "Session Manager".
-    - In the terminal, run the following command to test connectivity to the instance in VPC 2:   
+  - Go to the EC2 Dashboard.
+  - Select the instance `Instance - MyOrg VPC 1`.
+  - Click on "Connect" and choose "Session Manager".
+  - In the terminal, run the following command to test connectivity to the instance in VPC 2:   
 
 ```bash
-    ping <Private IP of Instance - MyOrg VPC 2>
+  ping <Private IP of Instance - MyOrg VPC 2>
   ```
 
 - If you receive responses, the peering connection is working correctly.
 
 ![test](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/13.%20Test%201.png?raw=true)  
 
-    - See if you can test the connection from VPC 1 to VPC 2's public IP address.
-    - Head back to your EC2 console, and copy the Public IPv4 address of Instance - NextWork VPC 2.
-    - Your final result should look similar to something like 
+  - See if you can test the connection from VPC 1 to VPC 2's public IP address.
+  - Head back to your EC2 console, and copy the Public IPv4 address of Instance - NextWork VPC 2.
+  - Your final result should look similar to something like 
 
 ```bash
-    ping <public IPv4 address>
+  ping <public IPv4 address>
   ```
 
 - If you receive responses, the peering connection is working correctly.
@@ -228,7 +229,7 @@ Now go back to the VPC Dashboard.
 -Another optional extension! Back in your EC2 Instance Connect tab, run the same ping command but add -c 5 to the end of the command.  
 
 ```bash
-  ping -c 5 <Private IP of Instance - MyOrg VPC 2>
+  ping [Private IP of Instance - MyOrg VPC 2] -c 5
 ```
 
 ![test 3](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/15.%20Test%203.png?raw=true)  
@@ -246,16 +247,18 @@ Now go back to the VPC Dashboard.
 - Click on "Log groups" in the left sidebar.
 - Select the log group `MyOrgVPCFlowLogsGroup`.
 - Click into your log stream to see flow logs from EC2 Instance 1
-- You should see logs similar to the following:
+- You should see logs similar to the following:  
+
   ```
   2023-10-01T12:00:00.000Z MyOrgVPCFlowLog 1234567890123456 1234567890123456 eni-1234567890abcdef    
-  ACCEPT OK```
+  ACCEPT OK
+  ```
 
 ![log groups](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/17.%20LogGroups.png?raw=true)  
 
 - The log entries will contain information about the traffic flowing through the VPC, including source and destination IP addresses, ports, and protocols.
 - You can use these logs to monitor and analyze network traffic, troubleshoot issues, and ensure compliance with security policies.
-- In the left hand navigation panel, click on Logs Insights.
+- In the left hand navigation panel, click on Logs Insights.
 - Select the log group `MyOrgVPCFlowLogsGroup` from the select log group dropdown.
 - select the Query folder on the right hand size.
 - Under Flow Logs, select Top 10 byte transfers by source and destination IP addresses.
