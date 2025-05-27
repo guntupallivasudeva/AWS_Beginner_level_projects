@@ -49,7 +49,7 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
 
 ## Project Architecture Diagram
 
-![VPC Peering Architecture]()
+![VPC Peering Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Project%20Architecture.png?raw=true)
 
 ---
 
@@ -76,13 +76,13 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
 
 ![SG 1 Inbound](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/2.%20SG%20Inbound%20rules.png?raw=true)  
 
-Insatace 1
+#### Insatace 1
 
 ![Insatnce 2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/3.%20Instance%202%20%20Settings%20.png?raw=true)  
 
 ![SG 2 Inbound](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/4.%20SG%20Inbound%20rules.png?raw=true)  
 
-Instance 2
+#### Instance 2
 
 ### 33. Set UP Flow Logs
 
@@ -109,6 +109,7 @@ Instance 2
     - IAM Role: Create a new role with the name `MyOrgVPCFlowLogsRole`.
 
 ![Flow log](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/6.%20Flow%20Log%20for%20VPC%201.png?raw=true)  
+
 ![flow log](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/6.1,12.%20Create%20a%20flow%20log.png?raw=true)  
 
 #### 34. Create IAM Role for Flow Logs :
