@@ -76,9 +76,13 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
 
 ![SG 1 Inbound](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/2.%20SG%20Inbound%20rules.png?raw=true)  
 
+Insatace 1
+
 ![Insatnce 2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/3.%20Instance%202%20%20Settings%20.png?raw=true)  
 
 ![SG 2 Inbound](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/4.%20SG%20Inbound%20rules.png?raw=true)  
+
+Instance 2
 
 ### 33. Set UP Flow Logs
 
