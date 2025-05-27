@@ -150,9 +150,9 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
     - Select "Custom Trust policy" as the trusted entity type.
     - replacle "principal" with the following:
 
-    ```json
-    {
-      "Service": "vpc-flow-logs.amazonaws.com"
+```json
+   {
+   "Service": "vpc-flow-logs.amazonaws.com"
     }
     ```
     - Choose Next.
@@ -199,8 +199,8 @@ Now go back to the VPC Dashboard.
     - In the terminal, run the following command to test connectivity to the instance in VPC 2:   
 
 ```bash
-    ping <Private IP of Instance - MyOrg VPC 2>
-  ```
+   ping <Private IP of Instance - MyOrg VPC 2>
+```
 
 - If you receive responses, the peering connection is working correctly.
 
@@ -210,9 +210,10 @@ Now go back to the VPC Dashboard.
     - Head back to your EC2 console, and copy the Public IPv4 address of Instance - NextWork VPC 2.
     - Your final result should look similar to something like 
 
-    ```bash
-      ping <public IPv4 address>
-    ```
+```bash
+   ping [public IPv4 address]
+```
+
 - If you receive responses, the peering connection is working correctly.
 
 ![test 2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/14.%20Test%202%20.png?raw=true)  
@@ -226,9 +227,9 @@ Now go back to the VPC Dashboard.
 - Now you may test some another extension as an option.
 -Another optional extension! Back in your EC2 Instance Connect tab, run the same ping command but add -c 5 to the end of the command.  
 
-  ```bash
-    ping -c 5 <Private IP of Instance - MyOrg VPC 2>
-  ```
+```bash
+   ping <Private IP of Instance - MyOrg VPC 2> -c 5
+```
 
 ![test 3](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/15.%20Test%203.png?raw=true)  
 
