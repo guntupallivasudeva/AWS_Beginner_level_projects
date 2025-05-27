@@ -72,10 +72,13 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
         - Allow inbound traffic on port range All (All ICMP - IPv4) from anywhere (0.0.0.0/0). For both instances.
     - Review and launch the instance.
 
-![Insatnce 1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/1.%20Instance%201%20Settings%20.png?raw=true)
-![SG 1 Inbound](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/2.%20SG%20Inbound%20rules.png?raw=true)
-![Insatnce 2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/3.%20Instance%202%20%20Settings%20.png?raw=true)
-![SG 2 Inbound](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/4.%20SG%20Inbound%20rules.png?raw=true)
+![Insatnce 1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/1.%20Instance%201%20Settings%20.png?raw=true)  
+
+![SG 1 Inbound](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/2.%20SG%20Inbound%20rules.png?raw=true)  
+
+![Insatnce 2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/3.%20Instance%202%20%20Settings%20.png?raw=true)  
+
+![SG 2 Inbound](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/4.%20SG%20Inbound%20rules.png?raw=true)  
 
 ### 33. Set UP Flow Logs
 
@@ -90,7 +93,7 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
    - Select the VPC `MyOrg VPC-1`.
    - Scroll down to the "Flow Logs" section.
   
-![Log group]()
+![Log group](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/5.%20Log%20group%20.png?raw=true)  
 
 3. **Create Flow Log**:
     - Click on "Create flow log" from VPC Dashboard for `MyOrg VPC-1`.
@@ -101,8 +104,8 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
     - Log Group: Select `MyOrgVPCFlowLogsGroup`.
     - IAM Role: Create a new role with the name `MyOrgVPCFlowLogsRole`.
 
-![Flow log]()
-![flow log]()
+![Flow log](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/6.%20Flow%20Log%20for%20VPC%201.png?raw=true)  
+![flow log](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/6.1,12.%20Create%20a%20flow%20log.png?raw=true)  
 
 #### 34. Create IAM Role for Flow Logs :
 
@@ -135,7 +138,7 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
     - Name the policy as `MyOrgVPCFlowLogsPolicy`.
     - Click "Create policy".
 
-![Policy]()
+![Policy](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/7.%20IAM%20flow%20log%20policy.png?raw=true)  
 
     - Now Choose **Roles** on left hand navigation pane.
     - Click on "Create role".
@@ -153,10 +156,13 @@ This project demonstrates how to set up VPC Peering Connections between two VPCs
     - Name the role as `MyOrgVPCFlowLogsRole`.
     - Click "Create role".
 
-![Role]()
-![Role 2]()
-![Role 3]()
-![Role 4]()
+![Role](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/8.%20IAM%20role%20for%20Flow%20log.png?raw=true)  
+
+![Role 2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/9.%20Custom%20Trust%20policy%20code.png?raw=true)  
+
+![Role 3](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/10.%20Flow%20Log%20Policy%20Permission.png?raw=true)  
+
+![Role 4](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/11.%20Name%20of%20the%20Flow%20Log%20Role.png?raw=true)  
 
 Now go back to the VPC Dashboard.
 
@@ -166,9 +172,11 @@ Now go back to the VPC Dashboard.
 
     - Select the IAM role `MyOrgVPCFlowLogsRole`.
     - Click "Create flow log".
-    - Now FFlow Log is all setup.
+    - Now FFlow Log is all setup.  
+    
+![](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/6.1,12.%20Create%20a%20flow%20log.png?raw=true)  
 
-![last]()
+![last](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/12.%20Set%20up%20to%20create%20Fow%20Log.png?raw=true)  
 
 ---
 
@@ -191,7 +199,7 @@ Now go back to the VPC Dashboard.
 
 - If you receive responses, the peering connection is working correctly.
 
-![test]()
+![test](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/13.%20Test%201.png?raw=true)  
 
     - See if you can test the connection from VPC 1 to VPC 2's public IP address.
     - Head back to your EC2 console, and copy the Public IPv4 address of Instance - NextWork VPC 2.
@@ -202,7 +210,7 @@ Now go back to the VPC Dashboard.
     ```
 - If you receive responses, the peering connection is working correctly.
 
-![test 2]()
+![test 2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/14.%20Test%202%20.png?raw=true)  
 
 - If Got any error please check the following:
   - Ensure that the security groups and network ACLs allow traffic between the two VPCs.
@@ -217,12 +225,13 @@ Now go back to the VPC Dashboard.
     ping -c 5 <Private IP of Instance - MyOrg VPC 2>
   ```
 
-![test 3]()
+![test 3](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/15.%20Test%203.png?raw=true)  
 
 - you should see 5 pings sent and automatically finish after 5 packets, which means the peering connection is working correctly.
 
 
-![last test]()
+![last test](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/16.%20last%20test.png?raw=true)  
+
 ---
 
 ### 35. Analyze Flow Logs
@@ -236,7 +245,8 @@ Now go back to the VPC Dashboard.
   2023-10-01T12:00:00.000Z MyOrgVPCFlowLog 1234567890123456 1234567890123456 eni-1234567890abcdef    
   ACCEPT OK```
 
-![log groups]()
+![log groups](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/17.%20LogGroups.png?raw=true)  
+
 - The log entries will contain information about the traffic flowing through the VPC, including source and destination IP addresses, ports, and protocols.
 - You can use these logs to monitor and analyze network traffic, troubleshoot issues, and ensure compliance with security policies.
 - In the left hand navigation panel, click on Logs Insights.
@@ -246,8 +256,11 @@ Now go back to the VPC Dashboard.
 - Click Apply, and then Run query.
 - Review the query results.
 
-![log sights 1]()
-![log sights 2]()
+![log sights 1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/18.%20Log%20Insights%201.png?raw=true)  
+
+![log sights 2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/7.%20VPC%20Monitoring%20with%20Flow%20Logs/Images/19.%20Log%20Sights%202.png?raw=true)  
+
+
 ---
 ----------------------------------------------------------
 | Component        | Name                                |
