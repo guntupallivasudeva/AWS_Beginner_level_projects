@@ -12,11 +12,11 @@
 
 ## Project Architecture
 
-![Project Architecture](https://via.placeholder.com/800x400.png?text=Project+Architecture+Diagram)  
+![Project Architecture]([https://via.placeholder.com/800x400.png?text=Project+Architecture+Diagram](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/PA%201%20.png?raw=true))  
 
 before adding Endpoint and S3 bucket policy, the architecture looks like this
 
-![Project Architecture](https://via.placeholder.com/800x400.png?text=Project+Architecture+Diagram)
+![Project Architecture]([https://via.placeholder.com/800x400.png?text=Project+Architecture+Diagram](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/PA%202%20.png?raw=true))
 
 After adding Endpoint and S3 bucket policy, the architecture looks like this
 
@@ -38,11 +38,23 @@ After adding Endpoint and S3 bucket policy, the architecture looks like this
   - Leave IPv6, DNS settings as default
 3. Click **Create VPC**
 
-![]()
-![]()
-![]()
-![]()
-![]()
+![1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/1.%20VPC%20create.png?raw=true)
+
+-
+
+![2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/2.%20VPC%20create.png?raw=true)
+
+-
+
+![3](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/3.%20VPC%20create.png?raw=true)
+
+-
+
+![4](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/4.%20VPC%20Resource%20Map.png?raw=true)
+
+-
+
+![5](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/5.%20VPC%20created.png?raw=true)
 
 
 ---
@@ -62,10 +74,19 @@ After adding Endpoint and S3 bucket policy, the architecture looks like this
   - name:`SG - MyOrg Insatance`
 4. Click **Launch Instance**
 
-![]()
-![]()
-![]()
-![]()
+![6](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/6.%20EC2%20Instace%202.png?raw=true)
+
+-
+
+![7](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/7.%20EC2%20Instace%203.png?raw=true)
+
+-
+
+![8](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/8.%20EC2%20Instace%204.png?raw=true)
+
+-
+
+![9](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/9.%20EC2%20Instace%205.png?raw=true)
 
 
 ---
@@ -78,8 +99,12 @@ After adding Endpoint and S3 bucket policy, the architecture looks like this
 4. Leave other settings as default
 5. Click **Create Bucket**
 
-![]()
-![]()
+![10](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/10.%20Create%20Bucket.png?raw=true)
+
+-
+
+![11](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/11.%20Upload%20Files%20to%20Bucket.png?raw=true)
+
 
 6. **Upload 2 Files to Bucket**
   - Open the bucket Click on - **Upload** 
@@ -106,7 +131,7 @@ ping [private IP of Instance]
 
 9. You should see a response indicating the instance is reachable like this:
 
-![]()
+![12](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/12.%20Connect%20your%20Ec2.png?raw=true)
 
 10. now we back to console to create IAM user and access key
 
@@ -133,9 +158,15 @@ ping [private IP of Instance]
 8. Click **Create access key**
 9. Download the `.csv file`.
 
-![]()
-![]()
-![]()
+![13](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/13.%20IAM%20Access%20Key%201.png?raw=true)
+
+-
+
+![14](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/14.%20IAM%20Access%20Key%202.png?raw=true)
+
+-
+
+![15](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/15.%20IAM%20Access%20Key%203.png?raw=true)
 
 ---
 ### 6. **Connect to your S3 bucket**
@@ -155,7 +186,7 @@ Default region name [None]: ap-south-2
 Default output format [None]: Leave blank
 
 ```
-![]()
+![16](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/16.%20Congfiure.png?raw=true)
 
 4. Now run the following command to list the S3 buckets:
 
@@ -163,7 +194,7 @@ Default output format [None]: Leave blank
 aws s3 ls
 ```
 
-![]()
+![17](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/17.%20S3%20ls.png?raw=true)
 
 5. You should see the `myorg-vpc-endpoints-bucket` listed. 
 6. To access the files in the bucket, run:
@@ -172,7 +203,7 @@ aws s3 ls
 aws s3 ls s3://myorg-vpc-endpoints-vasu
 ```
 
-![]()
+![18](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/18.%20files%20in%20bucket%20.png?raw=true)
 
 7. You should see the files `1.png` and `2.png` listed.
 8. Now you can upload the files using CLI from the following command:
@@ -187,7 +218,7 @@ sudo touch /tmp/myorg-file.txt
 aws s3 cp /tmp/myorg-file.txt s3://myorg-vpc-endpoints-vasu/
 ```
 
-![]()
+![19](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/19.%20new%20file%20add.png?raw=true)
 
 11. To verify the upload, run:
 
@@ -195,11 +226,11 @@ aws s3 cp /tmp/myorg-file.txt s3://myorg-vpc-endpoints-vasu/
 aws s3 ls s3://myorg-vpc-endpoints-vasu/
 ```
 
-![]()
+![20](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/20.%20FIles%20Verify.png?raw=true)
 
 12. You should see `myorg-file.txt` listed in the bucket by Switching back to S3 Console in another tab.
 
-![]()
+![21](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/21.%20verify%20in%20s3%20bucket.png?raw=true)
 
 13. Leave the connection tab open and proceed to create VPC Endpoint in another new tab.
 
@@ -220,13 +251,31 @@ aws s3 ls s3://myorg-vpc-endpoints-vasu/
 11. Wait for the endpoint to be created
 12. Once created, you will see the endpoint in the list with a status of `Available`
 
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
+![22](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/22.%20Create%20Endpoint.png?raw=true)
+
+-
+
+![23](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/23.%20Create%20Endpoint%202.png?raw=true)
+
+-
+
+![24](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/24.Create%20Endpoint%202%20.png?raw=true)
+
+-
+
+![25](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/25.%20Create%20Endpoint%203.png?raw=true)
+
+-
+
+![26](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/26.%20%20Add%20route%20table%20to%20endpoint.png?raw=true)
+
+-
+
+![27](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/27.%20Endpoint%20added%20to%20route%20table.png?raw=true)
+
+-
+
+![28](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/28.%20Endpoint%20Created.png?raw=true)
 
 ---
 
@@ -260,7 +309,7 @@ aws s3 ls s3://myorg-vpc-endpoints-vasu/
 }
 ```
 
-![policy pic]()
+![policy pic](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/29%20.%20S3%20Policy.png?raw=true)
 
 3. Replace bucket name and vpce id `vpce-xxxxxxxxxxxx` with your actual VPC endpoint ID
 4. Use above Bucket ARN on top and VPC Endpoint ID in the Vpc endpoint tab.
@@ -278,7 +327,8 @@ aws s3 ls s3://myorg-endpoint-vasu/
 ```
 11. You can find the files you uploaded earlier in the S3 bucket.
 
-![30]()
+![30](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/30.%20All%20in%20one%20verify.png?raw=true)
+
 ---
 
 ### 9. Components Table
