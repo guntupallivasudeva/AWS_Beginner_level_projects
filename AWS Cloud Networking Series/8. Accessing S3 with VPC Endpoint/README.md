@@ -40,19 +40,19 @@ After adding Endpoint and S3 bucket policy, the architecture looks like this
 
 ![1](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/1.%20VPC%20create.png?raw=true)
 
--
+--
 
 ![2](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/2.%20VPC%20create.png?raw=true)
 
--
+--
 
 ![3](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/3.%20VPC%20create.png?raw=true)
 
--
+--
 
 ![4](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/4.%20VPC%20Resource%20Map.png?raw=true)
 
--
+--
 
 ![5](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/5.%20VPC%20created.png?raw=true)
 
@@ -76,15 +76,15 @@ After adding Endpoint and S3 bucket policy, the architecture looks like this
 
 ![6](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/6.%20EC2%20Instace%202.png?raw=true)
 
--
+--
 
 ![7](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/7.%20EC2%20Instace%203.png?raw=true)
 
--
+--
 
 ![8](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/8.%20EC2%20Instace%204.png?raw=true)
 
--
+--
 
 ![9](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/9.%20EC2%20Instace%205.png?raw=true)
 
@@ -101,7 +101,7 @@ After adding Endpoint and S3 bucket policy, the architecture looks like this
 
 ![10](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/10.%20Create%20Bucket.png?raw=true)
 
--
+--
 
 ![11](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/11.%20Upload%20Files%20to%20Bucket.png?raw=true)
 
@@ -160,11 +160,11 @@ ping [private IP of Instance]
 
 ![13](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/13.%20IAM%20Access%20Key%201.png?raw=true)
 
--
+--
 
 ![14](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/14.%20IAM%20Access%20Key%202.png?raw=true)
 
--
+--
 
 ![15](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/15.%20IAM%20Access%20Key%203.png?raw=true)
 
@@ -253,27 +253,27 @@ aws s3 ls s3://myorg-vpc-endpoints-vasu/
 
 ![22](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/22.%20Create%20Endpoint.png?raw=true)
 
--
+--
 
 ![23](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/23.%20Create%20Endpoint%202.png?raw=true)
 
--
+--
 
 ![24](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/24.Create%20Endpoint%202%20.png?raw=true)
 
--
+--
 
 ![25](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/25.%20Create%20Endpoint%203.png?raw=true)
 
--
+--
 
 ![26](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/26.%20%20Add%20route%20table%20to%20endpoint.png?raw=true)
 
--
+--
 
 ![27](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/27.%20Endpoint%20added%20to%20route%20table.png?raw=true)
 
--
+--
 
 ![28](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/Images/28.%20Endpoint%20Created.png?raw=true)
 
