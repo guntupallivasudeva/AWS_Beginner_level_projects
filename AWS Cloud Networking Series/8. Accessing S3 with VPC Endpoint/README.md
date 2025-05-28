@@ -12,11 +12,11 @@
 
 ## Project Architecture
 
-![Project Architecture]([https://via.placeholder.com/800x400.png?text=Project+Architecture+Diagram](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/PA%201%20.png?raw=true))  
+![Project Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/PA%201%20.png?raw=true) 
 
 before adding Endpoint and S3 bucket policy, the architecture looks like this
 
-![Project Architecture]([https://via.placeholder.com/800x400.png?text=Project+Architecture+Diagram](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/PA%202%20.png?raw=true))
+![Project Architecture](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/blob/main/AWS%20Cloud%20Networking%20Series/8.%20Accessing%20S3%20with%20VPC%20Endpoint/PA%202%20.png?raw=true)
 
 After adding Endpoint and S3 bucket policy, the architecture looks like this
 
