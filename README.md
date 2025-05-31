@@ -1,6 +1,6 @@
 # AWS_Beginner_level_projects
 
-1. [AWS Static Website Host Project Using S3 and Route 53](https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/tree/main/Aws%20Static%20WebHost%20Using%20S3%20%26%20Route53)
+1. **[AWS Static Website Host Project Using S3 and Route 53]**(https://github.com/guntupallivasudeva/AWS_Beginner_level_projects/tree/main/Aws%20Static%20WebHost%20Using%20S3%20%26%20Route53)
 
 ### 2. AWS Web Server Hosting Project Using EC2, S3, VPC, Security Groups and Keyvalue Pair 
 ### 3. Visualize Data Using Aws Quick-Sight  
