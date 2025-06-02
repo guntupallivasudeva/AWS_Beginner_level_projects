@@ -84,7 +84,7 @@ The dataset is a simple CSV file containing mock customer sales data with the fo
 In this project, you'll learn how to create visualizations from a large dataset using Amazon S3 and Amazon Quicksight. We'll be working with a dataset of 50,000 best-selling products on Amazon.com.
 
 ### Step #1: Download the Dataset
-- Navigate to Visualize_Data_using_Amazon_QuickSight/Amazon-Bestseller-Dataset.csv to download the "Amazon Bestseller Dataset" CSV file and the "manifest.json" file.
+- Navigate to [AWS_Beginner_level_projects/Visualize_Data_using_Amazon_QuickSight](https://github.com/guntupallivasudeva) to download the "Amazon Bestseller Dataset" CSV file and the "manifest.json" file.
 - Click on "raw" and Control+S to save both files onto your computer.
 
 ### Step #2: Store the Dataset in Amazon S3
